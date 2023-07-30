@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+    <title>Journey</title>
+</head>
+<body>
+
+    <!-- hero section -->
+    <section id="home" class="h-full">
+        
+        <!-- top nav menu -->
+        <header>
+            <nav class="flex">
+                <div class="logo flex">
+                    <img src="./img/logo.png" alt="logo" id="logo">
+                    <p>JOURNEY</p>
+                </div>
+            
+                <div class="links d-flex m-hidden">
+                    <div class="link"><a href="#home">Home</a></div>
+                    <div class="link"><a href="#about">Top Destinations</a></div>
+                    <div class="link"><a href="#recommended-places">Recommended Places</a></div>
+                    <div class="link"><a href="#contact">Contact Us</a></div>
+                </div>
+            </nav>
+        </header>
+        <br><br><br>
+
+        <div class="hero-container">
+            <img class="hero-background" src="./img/banner.jpg" alt="banner image">
+            <div class="hero-items">
+                <p>LET'S BEGIN</p>
+                <img src="./img/dots-3.png" alt="dots image">
+                <p>We assist you to choose the best.</p>
+
+                <center>
+                    <div class="hero-about-button-container">
+                        <div class="hero-about-button"><p>&#8964;</p></div>
+                    </div>
+                    <br>
+                    <div class="hero-form-container">
+
+                        <div class="hero-form">
+                            
+                            <div class="form-top d-flex">
+                                <div class="form-l">
+                                    <label for="">Choose Your Destination</label>
+                                    <input type="text" placeholder="Type your destination...">
+                                </div>
+                                <div class="form-r d-flex">
+
+                                    <div class="form-select">
+                                        <label for="">How many rooms?</label>
+                                        <select name="" id="">
+                                            <option value="">1 Room</option>
+                                            <option value="">2 Room</option>
+                                            <option value="">3 Room</option>
+                                            <option value="">4 Room</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="form-select">
+                                        <label for="">Adult</label>
+                                        <select name="" id="">
+                                            <option value="">1 </option>
+                                            <option value="">2 </option>
+                                            <option value="">3 </option>
+                                            <option value="">4 </option>
+                                        </select>
+                                    </div>
+
+                                    <div class="form-select">
+                                        <label for="">Children</label>
+                                        <br>
+                                        <select name="" id="">
+                                            <option value="">0</option>
+                                            <option value="">1</option>
+                                            <option value="">2</option>
+                                            <option value="">3</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-bottom d-flex">
+                                <div class="form-l d-flex">
+                                    <div class="form-l-n">
+                                        <label for="">Check in Date</label>
+                                        <input type="text" placeholder="Check in">
+                                    </div>
+                                    <div class="form-r-n">
+                                        <label for="">Check out Date</label>
+                                        <input type="text" placeholder="Check out">
+                                    </div>
+                                </div>
+                                <div class="form-r">
+                                    <button class="hero-form-submit">CHECK AVAILABILITY</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </center>
+            </div>
+        </div>
+    </section>
+
+    <!-- about section -->
+    <br>
+    <section id="about" class="about">
+        <center>
+            <h3>YOUR <b>JOURNEY </b> IS OUR PRIORITY</h3>
+            <p>Nullam auctor, sapien sit amet lacinia euismod, lorem magna lobortis massa, in tincidunt mi metus quis lectus. Duis nec lobortis velit. Vivamus id magna vulputate, tempor ante eget, tempus augue. Maecenas ultricies neque magna.</p>
+            <button>CONTINUE EXPLORE</button>
+            <br><br>
+        </center>
+    </section>
+    <div class="slider">
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 7</div>
+                <img src="./slider/slider-img-01.jpg" style="width:100%">
+                <div class="text">North America's most famous places</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 7</div>
+                <img src="./slider/slider-img-02.jpg" style="width:100%">
+                <div class="text">South America's most famous places</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 7</div>
+                <img src="./slider/slider-img-03.jpg" style="width:100%">
+                <div class="text">Europe's most famous places</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 7</div>
+                <img src="./slider/slider-img-04.jpg" style="width:100%">
+                <div class="text">Asia's most famous places</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">5 / 7</div>
+                <img src="./slider/slider-img-05.jpg" style="width:100%">
+                <div class="text">Africa's most famous places</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">6 / 7</div>
+                <img src="./slider/slider-img-06.jpg" style="width:100%">
+                <div class="text">Australia's most famous places</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">7 / 7</div>
+                <img src="./slider/slider-img-07.jpg" style="width:100%">
+                <div class="text">Antartica's most famous places</div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+
+        </div>
+
+    </div>
+
+    <!-- location select -->
+    
+    <section id="recommended-places" class="recommended-places">
+        <div class="location-select d-flex">
+            <div class="top flex">
+                <div class="location-select-option" onclick="showPanel(0, '#c66995')">
+                    <img src="./img/north-america.png" alt="north-america">
+                    <p>NORTH AMERICA</p>
+                </div>
+                <div class="location-select-option" onclick="showPanel(1, '#c66995')">
+                    <img src="./img/south-america.png" alt="south-america">
+                    <p>SOUTH AMERICA</p>
+                </div>
+                <div class="location-select-option" onclick="showPanel(2, '#c66995')">
+                    <img src="./img/europe.png" alt="europe">
+                    <p>EUROPE</p>
+                </div>
+                <div class="location-select-option" onclick="showPanel(3, '#c66995')">
+                    <img src="./img/asia.png" alt="asia">
+                    <p>ASIA</p>
+                </div>
+            </div>
+            <div class="bottom flex">
+                <div class="location-select-option" onclick="showPanel(4, '#c66995')">
+                    <img src="./img/africa.png" alt="africa">
+                    <p>AFRICA</p>
+                </div>
+                <div class="location-select-option" onclick="showPanel(5, '#c66995')">
+                    <img src="./img/australia.png" alt="australia">
+                    <p>AUSTRALIA</p>
+                </div>
+                <div class="location-select-option" onclick="showPanel(6, '#c66995')">
+                    <img src="./img/antartica.png" alt="antartica">
+                    <p>ANTARTICA</p>
+                </div>
+            </div>
+        </div>
+        <br><br><br>
+
+        <div class="tab-panel">
+            <center>
+                <div class="recommended-place-card-container">
+                    <div class="recommended-place-card d-flex">
+                        <img src="./img/tm-img-01.jpg" alt="">
+                        <div class="text-container">
+                            <h3>NORTH GARDEN RESORT</h3>
+                            <p>One North</p>
+                            <p>Sed egestas, odio nec bibendum mattis, quam odio hendrerit risus, eu varius eros lacus sit amet lectus. Donec blandit luctus dictum...</p>
+                        </div>
+                        <img src="./img/button-curve.png" alt="">
+                        <div class="price">
+                            <h4>$110</h4>
+                            <p>CONTINUE READING</p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="recommended-place-card-container">
+                    <div class="recommended-place-card d-flex">
+                        <img src="./img/tm-img-02.jpg" alt="">
+                        <div class="text-container">
+                            <h3>FELIS NEC DIGNISSIM</h3>
+                            <p>Two North</p>
+                            <p>Sed egestas, odio nec bibendum mattis, quam odio hendrerit risus, eu varius eros lacus sit amet lectus. Donec blandit luctus dictum...</p>
+                        </div>
+                        <img src="./img/button-curve.png" alt="">
+                        <div class="price">
+                            <h4>$120</h4>
+                            <p>CONTINUE READING</p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="recommended-place-card-container">
+                    <div class="recommended-place-card d-flex">
+                        <img src="./img/tm-img-03.jpg" alt="">
+                        <div class="text-container">
+                            <h3>SED FERMENTUM JUSTO</h3>
+                            <p>Three North</p>
+                            <p>Sed egestas, odio nec bibendum mattis, quam odio hendrerit risus, eu varius eros lacus sit amet lectus. Donec blandit luctus dictum...</p>
+                        </div>
+                        <img src="./img/button-curve.png" alt="">
+                        <div class="price">
+                            <h4>$130</h4>
+                            <p>CONTINUE READING</p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="recommended-place-card-container">
+                    <div class="recommended-place-card d-flex">
+                        <img src="./img/tm-img-04.jpg" alt="">
+                        <div class="text-container">
+                            <h3>MAECENAS ULTRICIES NEQUE</h3>
+                            <p>Fourth North</p>
+                            <p>Sed egestas, odio nec bibendum mattis, quam odio hendrerit risus, eu varius eros lacus sit amet lectus. Donec blandit luctus dictum...</p>
+                        </div>
+                        <img src="./img/button-curve.png" alt="">
+                        <div class="price">
+                            <h4>$140</h4>
+                            <p>CONTINUE READING</p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+            </center>
+        </div>
+        <div class="tab-panel">
+            <center>
+                <div class="recommended-place-card-container">
+                    <div class="recommended-place-card d-flex">
+                        <img src="./img/tm-img-01.jpg" alt="">
+                        <div class="text-container">
+                            <h3>SOUTH RESORT HOTEL</h3>
+                            <p>South One</p>
+                            <p>Sed egestas, odio nec bibendum mattis, quam odio hendrerit risus, eu varius eros lacus sit amet lectus. Donec blandit luctus dictum...</p>
+                        </div>
+                        <img src="./img/button-curve.png" alt="">
+                        <div class="price">
+                            <h4>$220</h4>
+                            <p>CONTINUE READING</p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="recommended-place-card-container">
+                    <div class="recommended-place-card d-flex">
+                        <img src="./img/tm-img-02.jpg" alt="">
+                        <div class="text-container">
+                            <h3>AENEAN AC ANTE NEC DIAM</h3>
+                            <p>South Second</p>
+                            <p>Sed egestas, odio nec bibendum mattis, quam odio hendrerit risus, eu varius eros lacus sit amet lectus. Donec blandit luctus dictum...</p>
+                        </div>
+                        <img src="./img/button-curve.png" alt="">
+                        <div class="price">
+                            <h4>$230</h4>
+                            <p>CONTINUE READING</p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="recommended-place-card-container">
+                    <div class="recommended-place-card d-flex">
+                        <img src="./img/tm-img-03.jpg" alt="">
+                        <div class="text-container">
+                            <h3>SUSPENDISSE NEC DAPIBUS</h3>
+                            <p>South Third</p>
+                            <p>Sed egestas, odio nec bibendum mattis, quam odio hendrerit risus, eu varius eros lacus sit amet lectus. Donec blandit luctus dictum...</p>
+                        </div>
+                        <img src="./img/button-curve.png" alt="">
+                        <div class="price">
+                            <h4>$240</h4>
+                            <p>CONTINUE READING</p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="recommended-place-card-container">
+                    <div class="recommended-place-card d-flex">
+                        <img src="./img/tm-img-04.jpg" alt="">
+                        <div class="text-container">
+                            <h3>ALIQUAM VIVERRA MI AT NISL</h3>
+                            <p>South Fourth</p>
+                            <p>Sed egestas, odio nec bibendum mattis, quam odio hendrerit risus, eu varius eros lacus sit amet lectus. Donec blandit luctus dictum...</p>
+                        </div>
+                        <img src="./img/button-curve.png" alt="">
+                        <div class="price">
+                            <h4>$250</h4>
+                            <p>CONTINUE READING</p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+            </center>
+        </div>
+        <div class="tab-panel">
+            <center>
+                <div class="recommended-place-card-container">
+                    <div class="recommended-place-card d-flex">
+                        <img src="./img/tm-img-01.jpg" alt="">
+                        <div class="text-container">
+                            <h3>EUROPE HOTEL</h3>
+                            <p>Venecia, Italy</p>
+                            <p>Sed egestas, odio nec bibendum mattis, quam odio hendrerit risus, eu varius eros lacus sit amet lectus. Donec blandit luctus dictum...</p>
+                        </div>
+                        <img src="./img/button-curve.png" alt="">
+                        <div class="price">
+                            <h4>$330</h4>
+                            <p>CONTINUE READING</p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="recommended-place-card-container">
+                    <div class="recommended-place-card d-flex">
+                        <img src="./img/tm-img-02.jpg" alt="">
+                        <div class="text-container">
+                            <h3>IN VIVERRA ENIM TURPIS</h3>
+                            <p>Paris, France</p>
+                            <p>Sed egestas, odio nec bibendum mattis, quam odio hendrerit risus, eu varius eros lacus sit amet lectus. Donec blandit luctus dictum...</p>
+                        </div>
+                        <img src="./img/button-curve.png" alt="">
+                        <div class="price">
+                            <h4>$340</h4>
+                            <p>CONTINUE READING</p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="recommended-place-card-container">
+                    <div class="recommended-place-card d-flex">
+                        <img src="./img/tm-img-03.jpg" alt="">
+                        <div class="text-container">
+                            <h3>VOLUTPAT PELLENTESQUE</h3>
+                            <p>Barcelona, Spain</p>
+                            <p>Sed egestas, odio nec bibendum mattis, quam odio hendrerit risus, eu varius eros lacus sit amet lectus. Donec blandit luctus dictum...</p>
+                        </div>
+                        <img src="./img/button-curve.png" alt="">
+                        <div class="price">
+                            <h4>$350</h4>
+                            <p>CONTINUE READING</p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="recommended-place-card-container">
+                    <div class="recommended-place-card d-flex">
+                        <img src="./img/tm-img-04.jpg" alt="">
+                        <div class="text-container">
+                            <h3>GRAND RESORT PASHA</h3>
+                            <p>Istanbul, Turkey</p>
+                            <p>Sed egestas, odio nec bibendum mattis, quam odio hendrerit risus, eu varius eros lacus sit amet lectus. Donec blandit luctus dictum...</p>
+                        </div>
+                        <img src="./img/button-curve.png" alt="">
+                        <div class="price">
+                            <h4>$360</h4>
+                            <p>CONTINUE READING</p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+            </center>
+        </div>
+        <div class="tab-panel">
+            <center>
+                <div class="recommended-place-card-container">
+                    <div class="recommended-place-card d-flex">
+                        <img src="./img/tm-img-01.jpg" alt="">
+                        <div class="text-container">
+                            <h3>ASIA RESORT HOTEL</h3>
+                            <p>Singapore</p>
+                            <p>Sed egestas, odio nec bibendum mattis, quam odio hendrerit risus, eu varius eros lacus sit amet lectus. Donec blandit luctus dictum...</p>
+                        </div>
+                        <img src="./img/button-curve.png" alt="">
+                        <div class="price">
+                            <h4>$440</h4>
+                            <p>CONTINUE READING</p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="recommended-place-card-container">
+                    <div class="recommended-place-card d-flex">
+                        <img src="./img/tm-img-02.jpg" alt="">
+                        <div class="text-container">
+                            <h3>NULLAM EGET EST A NISL</h3>
+                            <p>Yangon, Myanmar</p>
+                            <p>Sed egestas, odio nec bibendum mattis, quam odio hendrerit risus, eu varius eros lacus sit amet lectus. Donec blandit luctus dictum...</p>
+                        </div>
+                        <img src="./img/button-curve.png" alt="">
+                        <div class="price">
+                            <h4>$450</h4>
+                            <p>CONTINUE READING</p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="recommended-place-card-container">
+                    <div class="recommended-place-card d-flex">
+                        <img src="./img/tm-img-03.jpg" alt="">
+                        <div class="text-container">
+                            <h3>PROIN INTERDUM ULLAMCORPER</h3>
+                            <p>Bangkok, Thailand</p>
+                            <p>Sed egestas, odio nec bibendum mattis, quam odio hendrerit risus, eu varius eros lacus sit amet lectus. Donec blandit luctus dictum...</p>
+                        </div>
+                        <img src="./img/button-curve.png" alt="">
+                        <div class="price">
+                            <h4>$460</h4>
+                            <p>CONTINUE READING</p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="recommended-place-card-container">
+                    <div class="recommended-place-card d-flex">
+                        <img src="./img/tm-img-04.jpg" alt="">
+                        <div class="text-container">
+                            <h3>LOREM IPSUM DOLOR SIT</h3>
+                            <p>Vientiane, Laos</p>
+                            <p>Sed egestas, odio nec bibendum mattis, quam odio hendrerit risus, eu varius eros lacus sit amet lectus. Donec blandit luctus dictum...</p>
+                        </div>
+                        <img src="./img/button-curve.png" alt="">
+                        <div class="price">
+                            <h4>$470</h4>
+                            <p>CONTINUE READING</p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+            </center>
+        </div>
+        <div class="tab-panel">
+            <center>
+                <div class="recommended-place-card-container">
+                    <div class="recommended-place-card d-flex">
+                        <img src="./img/tm-img-01.jpg" alt="">
+                        <div class="text-container">
+                            <h3>AFRICA RESORT HOTEL</h3>
+                            <p>First City</p>
+                            <p>Sed egestas, odio nec bibendum mattis, quam odio hendrerit risus, eu varius eros lacus sit amet lectus. Donec blandit luctus dictum...</p>
+                        </div>
+                        <img src="./img/button-curve.png" alt="">
+                        <div class="price">
+                            <h4>$550</h4>
+                            <p>CONTINUE READING</p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="recommended-place-card-container">
+                    <div class="recommended-place-card d-flex">
+                        <img src="./img/tm-img-02.jpg" alt="">
+                        <div class="text-container">
+                            <h3>AENEAN AC MAGNA DIAM</h3>
+                            <p>Second City</p>
+                            <p>Sed egestas, odio nec bibendum mattis, quam odio hendrerit risus, eu varius eros lacus sit amet lectus. Donec blandit luctus dictum...</p>
+                        </div>
+                        <img src="./img/button-curve.png" alt="">
+                        <div class="price">
+                            <h4>$560</h4>
+                            <p>CONTINUE READING</p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="recommended-place-card-container">
+                    <div class="recommended-place-card d-flex">
+                        <img src="./img/tm-img-03.jpg" alt="">
+                        <div class="text-container">
+                            <h3>BEACH BARBECUE SUNSET</h3>
+                            <p>Third City</p>
+                            <p>Sed egestas, odio nec bibendum mattis, quam odio hendrerit risus, eu varius eros lacus sit amet lectus. Donec blandit luctus dictum...</p>
+                        </div>
+                        <img src="./img/button-curve.png" alt="">
+                        <div class="price">
+                            <h4>$570</h4>
+                            <p>CONTINUE READING</p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="recommended-place-card-container">
+                    <div class="recommended-place-card d-flex">
+                        <img src="./img/tm-img-04.jpg" alt="">
+                        <div class="text-container">
+                            <h3>GRAND RESORT PASHA</h3>
+                            <p>Fourth City</p>
+                            <p>Sed egestas, odio nec bibendum mattis, quam odio hendrerit risus, eu varius eros lacus sit amet lectus. Donec blandit luctus dictum...</p>
+                        </div>
+                        <img src="./img/button-curve.png" alt="">
+                        <div class="price">
+                            <h4>$580</h4>
+                            <p>CONTINUE READING</p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+            </center>
+        </div>
+        <div class="tab-panel">
+            <center>
+                <div class="recommended-place-card-container">
+                    <div class="recommended-place-card d-flex">
+                        <img src="./img/tm-img-01.jpg" alt="">
+                        <div class="text-container">
+                            <h3>HOTEL AUSTRALIA</h3>
+                            <p>City One</p>
+                            <p>Sed egestas, odio nec bibendum mattis, quam odio hendrerit risus, eu varius eros lacus sit amet lectus. Donec blandit luctus dictum...</p>
+                        </div>
+                        <img src="./img/button-curve.png" alt="">
+                        <div class="price">
+                            <h4>$660</h4>
+                            <p>CONTINUE READING</p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="recommended-place-card-container">
+                    <div class="recommended-place-card d-flex">
+                        <img src="./img/tm-img-02.jpg" alt="">
+                        <div class="text-container">
+                            <h3>PROIN INTERDUM ULLAMCORPER</h3>
+                            <p>City Two</p>
+                            <p>Sed egestas, odio nec bibendum mattis, quam odio hendrerit risus, eu varius eros lacus sit amet lectus. Donec blandit luctus dictum...</p>
+                        </div>
+                        <img src="./img/button-curve.png" alt="">
+                        <div class="price">
+                            <h4>$560</h4>
+                            <p>CONTINUE READING</p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="recommended-place-card-container">
+                    <div class="recommended-place-card d-flex">
+                        <img src="./img/tm-img-03.jpg" alt="">
+                        <div class="text-container">
+                            <h3>BEACH BARBECUE SUNSET</h3>
+                            <p>City Three</p>
+                            <p>Sed egestas, odio nec bibendum mattis, quam odio hendrerit risus, eu varius eros lacus sit amet lectus. Donec blandit luctus dictum...</p>
+                        </div>
+                        <img src="./img/button-curve.png" alt="">
+                        <div class="price">
+                            <h4>$640</h4>
+                            <p>CONTINUE READING</p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="recommended-place-card-container">
+                    <div class="recommended-place-card d-flex">
+                        <img src="./img/tm-img-04.jpg" alt="">
+                        <div class="text-container">
+                            <h3>GRAND RESORT PASHA</h3>
+                            <p>City Four</p>
+                            <p>Sed egestas, odio nec bibendum mattis, quam odio hendrerit risus, eu varius eros lacus sit amet lectus. Donec blandit luctus dictum...</p>
+                        </div>
+                        <img src="./img/button-curve.png" alt="">
+                        <div class="price">
+                            <h4>$630</h4>
+                            <p>CONTINUE READING</p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+            </center>
+        </div>
+        <div class="tab-panel">
+            <center>
+                <div class="recommended-place-card-container">
+                    <div class="recommended-place-card d-flex">
+                        <img src="./img/tm-img-01.jpg" alt="">
+                        <div class="text-container">
+                            <h3>ANTARTICA RESORT</h3>
+                            <p>Ant City One</p>
+                            <p>Sed egestas, odio nec bibendum mattis, quam odio hendrerit risus, eu varius eros lacus sit amet lectus. Donec blandit luctus dictum...</p>
+                        </div>
+                        <img src="./img/button-curve.png" alt="">
+                        <div class="price">
+                            <h4>$770</h4>
+                            <p>CONTINUE READING</p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="recommended-place-card-container">
+                    <div class="recommended-place-card d-flex">
+                        <img src="./img/tm-img-02.jpg" alt="">
+                        <div class="text-container">
+                            <h3>PULVINAR SEMPER</h3>
+                            <p>Ant City Two</p>
+                            <p>Sed egestas, odio nec bibendum mattis, quam odio hendrerit risus, eu varius eros lacus sit amet lectus. Donec blandit luctus dictum...</p>
+                        </div>
+                        <img src="./img/button-curve.png" alt="">
+                        <div class="price">
+                            <h4>$230</h4>
+                            <p>CONTINUE READING</p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="recommended-place-card-container">
+                    <div class="recommended-place-card d-flex">
+                        <img src="./img/tm-img-03.jpg" alt="">
+                        <div class="text-container">
+                            <h3>CRAS VEL SAPIEN</h3>
+                            <p>Ant City Three</p>
+                            <p>Sed egestas, odio nec bibendum mattis, quam odio hendrerit risus, eu varius eros lacus sit amet lectus. Donec blandit luctus dictum...</p>
+                        </div>
+                        <img src="./img/button-curve.png" alt="">
+                        <div class="price">
+                            <h4>$140</h4>
+                            <p>CONTINUE READING</p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="recommended-place-card-container">
+                    <div class="recommended-place-card d-flex">
+                        <img src="./img/tm-img-04.jpg" alt="">
+                        <div class="text-container">
+                            <h3>NULLAM EGET EST</h3>
+                            <p>Ant City Four</p>
+                            <p>Sed egestas, odio nec bibendum mattis, quam odio hendrerit risus, eu varius eros lacus sit amet lectus. Donec blandit luctus dictum...</p>
+                        </div>
+                        <img src="./img/button-curve.png" alt="">
+                        <div class="price">
+                            <h4>$190</h4>
+                            <p>CONTINUE READING</p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+            </center>
+        </div>
+
+        <center>
+            <div class="recommended-place-card-button">
+                <button>SHOW MORE PLACES</button>
+            </div>
+        </center>
+        <br><br>
+    </section>
+
+    <section id="contact">
+        <div class="footer">
+            <center>
+                Copyright &copy; 2023 Journey <span><script>document.write(new Date().getFullYear())</script></span>
+            </center>
+        </div>
+    </section>
+    
+    <script>
+        // explore tabs
+        var tabButtons = document.querySelectorAll(" .location-select-option");
+        var tabPanel = document.querySelectorAll(".tab-panel");
+
+        function showPanel(panelIndex,colorCode){
+            tabButtons.forEach(function(node){
+                node.style.backgroundColor = "";
+                node.style.color = "";
+            });
+            tabButtons[panelIndex].style.backgroundColor = colorCode;
+            tabButtons[panelIndex].style.color = "white";
+            tabPanel.forEach(function(node){
+                node.style.display = "none";
+            });
+            tabPanel[panelIndex].style.display = "block";
+        }
+        showPanel(0,'#c66995');
+        
+
+        //* active menu
+        const li = document.querySelectorAll(".link a");
+        const sec = document.querySelectorAll("section");
+
+        function activeMenu(){
+            let len = sec.length;
+            while(--len && window.scrollY + 97 < sec[len].offsetTop){}
+            li.forEach(ltx => ltx.classList.remove("active"));
+            li[len].classList.add("active");
+        }
+        activeMenu();
+        window.addEventListener("scroll", activeMenu);
+    </script>
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+        showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+        showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+        }
+    </script>
+</body>
+</html>
