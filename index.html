@@ -725,13 +725,18 @@
         var tabPanel = document.querySelectorAll(".tab-panel");
 
         function showPanel(panelIndex){
+            // akan reset semua tab button kepada tiada background and color
             tabButtons.forEach(function(node){
                 node.style.backgroundColor = "";
                 node.style.color = "";
             });
+
+            // akan set color dan background berdasarkan index yang dihantar
             let colorCode = '#c66995';
             tabButtons[panelIndex].style.backgroundColor = colorCode;
             tabButtons[panelIndex].style.color = "white";
+
+            // letak display none kepada node sebelum ini
             tabPanel.forEach(function(node){
                 node.style.display = "none";
             });
@@ -740,28 +745,20 @@
         showPanel(0);
 
 
+        // nav mobile
         var button = document.getElementById("m-nav-button");
         var div = document.getElementById("m-nav-links");
 
+        // kalau buton ditekan akan run function
         button.addEventListener("click", function() {
+            // kalau dah ada .hide -> remove
             if (div.classList.contains("hide")) {
                 div.classList.remove("hide");
             } else {
+                // kalau takde .hide -> add
                 div.classList.add("hide");
             }
         });
-
-        // mobile nav
-        var mLinks = document.getElementById("#m-links-contain");
-
-        function mNav(){
-            if(mLinks.style.display = "block"){
-                mLinks.style.display = "none";
-            }
-            else{
-                mLinks.style.display = "block";
-            }
-        }
         
 
         //* active menu
@@ -769,8 +766,11 @@
         const sec = document.querySelectorAll("section");
 
         function activeMenu(){
+            // cari panjang section 
             let len = sec.length;
+            // selagi scroll dalam sec pertama -> tak buat apa ii
             while(--len && window.scrollY + 97 < sec[len].offsetTop){}
+            // kalau dah masuk section dua akan remove active and add len kepada sec seterusnya
             li.forEach(ltx => ltx.classList.remove("active"));
             li[len].classList.add("active");
         }
@@ -798,9 +798,11 @@
             if (n > slides.length) {slideIndex = 1}   
 
             if (n < 1) {slideIndex = slides.length}
+
             for (i = 0; i < slides.length; i++) {
                 slides[i].style.display = "none";  
             }
+
             for (i = 0; i < dots.length; i++) {
                 dots[i].className = dots[i].className.replace(" active", "");
             }
