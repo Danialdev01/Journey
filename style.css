@@ -459,7 +459,7 @@ label{
   padding: 8px 12px;
   position: absolute;
   bottom: 8px;
-  width: 100%;
+  width: 100vw;
   text-align: center;
 }
 
