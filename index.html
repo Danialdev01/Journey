@@ -27,6 +27,21 @@
                     <div class="link"><a href="#recommended-places">Recommended Places</a></div>
                     <div class="link"><a href="#contact">Contact Us</a></div>
                 </div>
+
+                <div style="text-align: right;" class="links d-flex d-hidden">
+                    <button id="m-nav-button">
+                        <div class="line"><hr></div>
+                        <div class="line"><hr></div>
+                        <div class="line"><hr></div>
+                    </button>
+                    <div id="m-nav-links" class="hide">
+                        <br><br>
+                        <div class="link"><a href="#home">Home</a></div>
+                        <div class="link"><a href="#about">Top Destinations</a></div>
+                        <div class="link"><a href="#recommended-places">Recommended Places</a></div>
+                        <div class="link"><a href="#contact">Contact Us</a></div>
+                    </div>
+                </div>
             </nav>
         </header>
         <br><br><br>
@@ -177,33 +192,33 @@
     <section id="recommended-places" class="recommended-places">
         <div class="location-select d-flex">
             <div class="top flex">
-                <div class="location-select-option" onclick="showPanel(0, '#c66995')">
+                <div class="location-select-option" onclick="showPanel(0)">
                     <img src="./img/north-america.png" alt="north-america">
                     <p>NORTH AMERICA</p>
                 </div>
-                <div class="location-select-option" onclick="showPanel(1, '#c66995')">
+                <div class="location-select-option" onclick="showPanel(1)">
                     <img src="./img/south-america.png" alt="south-america">
                     <p>SOUTH AMERICA</p>
                 </div>
-                <div class="location-select-option" onclick="showPanel(2, '#c66995')">
+                <div class="location-select-option" onclick="showPanel(2)">
                     <img src="./img/europe.png" alt="europe">
                     <p>EUROPE</p>
                 </div>
-                <div class="location-select-option" onclick="showPanel(3, '#c66995')">
+                <div class="location-select-option" onclick="showPanel(3)">
                     <img src="./img/asia.png" alt="asia">
                     <p>ASIA</p>
                 </div>
             </div>
             <div class="bottom flex">
-                <div class="location-select-option" onclick="showPanel(4, '#c66995')">
+                <div class="location-select-option" onclick="showPanel(4)">
                     <img src="./img/africa.png" alt="africa">
                     <p>AFRICA</p>
                 </div>
-                <div class="location-select-option" onclick="showPanel(5, '#c66995')">
+                <div class="location-select-option" onclick="showPanel(5)">
                     <img src="./img/australia.png" alt="australia">
                     <p>AUSTRALIA</p>
                 </div>
-                <div class="location-select-option" onclick="showPanel(6, '#c66995')">
+                <div class="location-select-option" onclick="showPanel(6)">
                     <img src="./img/antartica.png" alt="antartica">
                     <p>ANTARTICA</p>
                 </div>
@@ -709,11 +724,12 @@
         var tabButtons = document.querySelectorAll(" .location-select-option");
         var tabPanel = document.querySelectorAll(".tab-panel");
 
-        function showPanel(panelIndex,colorCode){
+        function showPanel(panelIndex){
             tabButtons.forEach(function(node){
                 node.style.backgroundColor = "";
                 node.style.color = "";
             });
+            let colorCode = '#c66995';
             tabButtons[panelIndex].style.backgroundColor = colorCode;
             tabButtons[panelIndex].style.color = "white";
             tabPanel.forEach(function(node){
@@ -721,7 +737,31 @@
             });
             tabPanel[panelIndex].style.display = "block";
         }
-        showPanel(0,'#c66995');
+        showPanel(0);
+
+
+        var button = document.getElementById("m-nav-button");
+        var div = document.getElementById("m-nav-links");
+
+        button.addEventListener("click", function() {
+            if (div.classList.contains("hide")) {
+                div.classList.remove("hide");
+            } else {
+                div.classList.add("hide");
+            }
+        });
+
+        // mobile nav
+        var mLinks = document.getElementById("#m-links-contain");
+
+        function mNav(){
+            if(mLinks.style.display = "block"){
+                mLinks.style.display = "none";
+            }
+            else{
+                mLinks.style.display = "block";
+            }
+        }
         
 
         //* active menu
@@ -737,32 +777,35 @@
         activeMenu();
         window.addEventListener("scroll", activeMenu);
     </script>
+
+    <!-- Slider -->
     <script>
         let slideIndex = 1;
         showSlides(slideIndex);
 
         function plusSlides(n) {
-        showSlides(slideIndex += n);
+            showSlides(slideIndex += n);
         }
 
         function currentSlide(n) {
-        showSlides(slideIndex = n);
+            showSlides(slideIndex = n);
         }
 
         function showSlides(n) {
-        let i;
-        let slides = document.getElementsByClassName("mySlides");
-        let dots = document.getElementsByClassName("dot");
-        if (n > slides.length) {slideIndex = 1}    
-        if (n < 1) {slideIndex = slides.length}
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";  
-        }
-        for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex-1].style.display = "block";  
-        dots[slideIndex-1].className += " active";
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}   
+
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
         }
     </script>
 </body>
