@@ -5,7 +5,7 @@ Jawapan soalan Peringkat dalaman kvskills tentang website landing page pelancong
 [Demo Website](https://kvskills-journey.netlify.app/)
 
 ## Desktop
-![Alt text](desktop%20view.png)
+![Alt text](reference/desktop%20view.png)
 
 ## Mobile
-![Alt text](mobile%20view.png)
+![Alt text](reference/mobile%20view.png)
